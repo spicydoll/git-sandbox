@@ -1,7 +1,9 @@
+import java.util.ArrayList;
+
 /**
  * Created by fchan on 5/24/2015.
  */
-public class Prime
+public class Numbers
 {
     public boolean isPrime_bruteForce( int val )
     {
@@ -26,5 +28,13 @@ public class Prime
             }
         }
         return true;
+    }
+
+    // Swap two numbers.
+    public void swap ( ArrayList<Integer> list )
+    {
+        list.set( 0, list.get(0) + list.get(1) );
+        list.set( 1, list.get(0) - list.get(1) );
+        list.set( 0, list.get(0) - list.get(1) );
     }
 }
